@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yonas Merga Medical Equipment — Trusted Medical Equipment Professional</title>
+<meta name="description" content="Medical, mobility, rehabilitation and home-care equipment in Addis Ababa, Ethiopia. Verified listings, honest information, direct human contact." />
+<meta name="theme-color" content="#07333B" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root{
+  --petrol-950:#04262E; --petrol-900:#07333B; --petrol-800:#0A4551;
+  --petrol-700:#0D5A69; --petrol-600:#12768A; --petrol-200:#B9D6DD;
+  --petrol-100:#DCEDF0; --petrol-050:#F0F7F8;
+
+  --bone-050:#FBFAF8; --bone-100:#F5F2ED; --bone-200:#E8E3DB;
+
+  --amber-600:#B8791F; --amber-500:#D18F2B; --amber-100:#F7EBD6;
+
+  --ink-900:#0E1A1D; --ink-700:#2C3D42; --ink-500:#5C7075; --ink-300:#93A3A7;
+
+  --whatsapp:#1FA855; --whatsapp-dark:#178C46;
+  --success:#2E7D4F; --caution:#B8791F;
+
+  --font-display:"Fraunces","Iowan Old Style",Palatino,Georgia,serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+
+  --fs-display:clamp(2.75rem,6.2vw,4.75rem);
+  --fs-h1:clamp(2.25rem,4.6vw,3.5rem);
+  --fs-h2:clamp(1.75rem,3.2vw,2.5rem);
+  --fs-h3:clamp(1.125rem,1.6vw,1.375rem);
+  --fs-body:1.0625rem; --fs-lede:clamp(1.0625rem,1.5vw,1.25rem);
+  --fs-small:0.9375rem; --fs-meta:0.8125rem; --fs-eyebrow:0.75rem;
+
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px;
+  --s-6:24px; --s-8:32px; --s-12:48px; --s-16:64px; --s-24:96px; --s-32:128px;
+
+  --wrap:1240px; --gutter:clamp(20px,5vw,48px);
+  --section-y:clamp(64px,9vw,128px);
+
+  --r-xs:4px; --r-sm:8px; --r-md:12px; --r-lg:20px; --r-full:999px;
+
+  --e-1:0 1px 2px rgba(7,51,59,.05);
+  --e-2:0 1px 3px rgba(7,51,59,.06),0 6px 16px rgba(7,51,59,.05);
+  --e-3:0 2px 6px rgba(7,51,59,.07),0 18px 44px rgba(7,51,59,.09);
+  --e-4:0 32px 80px rgba(7,51,59,.22);
+
+  --dur-micro:140ms; --dur-std:240ms; --dur-enter:560ms;
+  --ease-out:cubic-bezier(0.22,1,0.36,1);
+  --ease-inout:cubic-bezier(0.65,0,0.35,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;font-family:var(--font-body);font-size:var(--fs-body);
+  line-height:1.65;color:var(--ink-700);background:var(--bone-050);
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:none}
+input,select,textarea{font:inherit}
+a{color:var(--petrol-600);text-decoration:none}
+:focus-visible{outline:3px solid var(--petrol-600);outline-offset:3px;border-radius:4px}
+.container{max-width:var(--wrap);margin-inline:auto;padding:0 var(--gutter)}
+
+h1,h2,h3,h4{font-family:var(--font-display);color:var(--ink-900);line-height:1.15;letter-spacing:-.01em;margin:0 0 .5em;font-weight:600}
+h1{font-size:var(--fs-display);letter-spacing:-.02em;line-height:1.05;max-width:22ch}
+h2{font-size:var(--fs-h2);max-width:22ch}
+h3{font-size:var(--fs-h3);font-weight:600}
+p{margin:0 0 1.1em;max-width:68ch}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{
+  position:absolute;left:var(--gutter);top:-60px;background:var(--petrol-900);color:#fff;
+  padding:.75rem 1.25rem;border-radius:var(--r-sm);z-index:1000;transition:top var(--dur-std) var(--ease-out);
+}
+.skip-link:focus{top:12px}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
+
+/* ============================================================
+   UTILITY BAR
+   ============================================================ */
+.utility{background:var(--petrol-950);color:rgba(255,255,255,.72);font-size:var(--fs-meta)}
+.utility .container{padding-block:.55rem;display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-between;align-items:center}
+.utility a{color:rgba(255,255,255,.82);border-bottom:1px solid rgba(255,255,255,.25)}
+.utility a:hover{border-color:rgba(255,255,255,.6)}
+@media (max-width:768px){.utility{display:none}}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header{position:sticky;top:0;z-index:100;background:transparent;transition:background var(--dur-std) var(--ease-out),border-color var(--dur-std)}
+.site-header.is-solid{background:rgba(251,250,248,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--bone-200)}
+.header-inner{display:flex;align-items:center;gap:1rem;padding-block:.85rem}
+.brand{display:flex;align-items:center;gap:.75rem}
+.brand-mark{
+  width:44px;height:44px;border-radius:var(--r-sm);flex-shrink:0;
+  background:linear-gradient(145deg,var(--petrol-700),var(--petrol-600));
+  color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:1rem;
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text strong{font-size:.9375rem;font-weight:600;color:var(--ink-900);transition:color var(--dur-std)}
+.brand-text small{font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-500);font-weight:500}
+.site-header:not(.is-solid) .brand-text strong{color:#fff}
+.site-header:not(.is-solid) .brand-text small{color:rgba(255,255,255,.7)}
+
+.main-nav{display:none}
+.main-nav ul{list-style:none;display:flex;gap:1.75rem;margin:0;padding:0}
+.main-nav a{
+  position:relative;font-size:var(--fs-small);font-weight:500;color:inherit;padding:.4rem 0;
+}
+.main-nav a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:-3px;height:2px;background:var(--amber-500);
+  transition:right var(--dur-std) var(--ease-out);
+}
+.main-nav a:hover::after,.main-nav a.is-active::after{right:0}
+.site-header:not(.is-solid) .main-nav a{color:#fff}
+.site-header.is-solid .main-nav a{color:var(--ink-700)}
+
+.header-actions{margin-left:auto;display:flex;align-items:center;gap:.6rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.65rem 1.15rem;border-radius:var(--r-full);border:1.5px solid transparent;
+  font-size:.875rem;font-weight:600;white-space:nowrap;
+  transition:transform var(--dur-micro) var(--ease-out),background var(--dur-micro),border-color var(--dur-micro),color var(--dur-micro);
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.btn svg{flex-shrink:0}
+.btn-primary{background:var(--petrol-700);color:#fff}
+.btn-primary:hover{background:var(--petrol-800);color:#fff}
+.btn-whatsapp{background:var(--whatsapp);color:#fff}
+.btn-whatsapp:hover{background:var(--whatsapp-dark);color:#fff}
+.btn-ghost{background:transparent;color:var(--petrol-800);border-color:var(--bone-200)}
+.btn-ghost:hover{background:var(--petrol-050);border-color:var(--petrol-600)}
+.btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn-outline-light:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-sm{padding:.5rem .9rem;font-size:.8125rem}
+.btn-block{width:100%}
+
+.hamburger{display:grid;place-items:center;width:44px;height:44px;border-radius:var(--r-sm)}
+.hamburger span,.hamburger span::before,.hamburger span::after{
+  content:"";display:block;width:20px;height:2px;background:currentColor;position:relative;transition:transform var(--dur-std),opacity var(--dur-std);
+}
+.hamburger span::before{position:absolute;top:-6px}
+.hamburger span::after{position:absolute;top:6px}
+.site-header:not(.is-solid) .hamburger{color:#fff}
+.site-header.is-solid .hamburger{color:var(--ink-900)}
+.hamburger[aria-expanded="true"] span{background:transparent}
+.hamburger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.hamburger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+
+.mobile-panel{
+  display:none;position:absolute;left:0;right:0;top:100%;background:var(--bone-050);
+  box-shadow:var(--e-3);border-bottom:1px solid var(--bone-200);
+}
+.mobile-panel.is-open{display:block}
+.mobile-panel ul{list-style:none;margin:0;padding:.5rem var(--gutter) 1.25rem}
+.mobile-panel a{display:flex;align-items:center;min-height:48px;font-size:1rem;color:var(--ink-700);border-bottom:1px solid var(--bone-200)}
+.mobile-panel li:last-child a{border-bottom:none}
+.mobile-panel .mobile-actions{display:flex;gap:.6rem;padding:1rem var(--gutter) 1.5rem}
+
+@media (min-width:1024px){
+  .main-nav{display:block}
+  .hamburger{display:none}
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;color:#fff;overflow:hidden;
+  background-image:linear-gradient(160deg,rgba(4,38,46,.90),rgba(13,90,105,.82) 62%,rgba(4,38,46,.92)),url("quad-cane.jpg");
+  background-size:cover;background-position:center 30%;background-repeat:no-repeat;
+  padding-top:clamp(72px,12vw,140px);padding-bottom:clamp(56px,9vw,110px);
+}
+.hero::before,.hero::after{
+  content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.12;pointer-events:none;
+}
+.hero::before{width:520px;height:520px;background:var(--amber-500);top:-160px;right:-120px}
+.hero::after{width:420px;height:420px;background:var(--petrol-200);bottom:-180px;left:-100px}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:var(--s-16);align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:var(--s-12)}}
+.hero-eyebrow{font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--amber-500);margin-bottom:1rem}
+.hero h1{color:#fff;margin-bottom:.65em}
+.hero-lede{font-size:var(--fs-lede);line-height:1.6;max-width:52ch;color:rgba(255,255,255,.82);margin-bottom:1.75em}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.85rem}
+
+.hero-cards{display:flex;flex-direction:column;gap:.85rem}
+.glass-card{
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-md);
+  padding:1.15rem 1.3rem;display:flex;align-items:flex-start;gap:.85rem;
+}
+.glass-card .check{
+  flex-shrink:0;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.14);
+  display:grid;place-items:center;margin-top:.1rem;
+}
+.glass-card p{margin:0;font-size:var(--fs-small);color:rgba(255,255,255,.9);max-width:none}
+.glass-card em{font-style:normal;color:#fff;font-weight:600}
+
+/* ============================================================
+   SECTION HEADER
+   ============================================================ */
+.section-header{max-width:70ch;margin-bottom:var(--s-12)}
+.eyebrow{font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--amber-600);margin-bottom:.75rem;display:block}
+.lede{font-size:var(--fs-lede);color:var(--ink-500);max-width:58ch;margin:0}
+section{padding-block:var(--section-y)}
+.bg-bone-100{background:var(--bone-100)}
+.bg-petrol-050{background:var(--petrol-050)}
+
+/* ============================================================
+   TRUST STRIP
+   ============================================================ */
+.trust-strip{background:var(--petrol-050);padding-block:var(--s-8)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust-item{padding:0 var(--s-6);border-left:1px solid var(--bone-200)}
+.trust-item:first-child{border-left:none;padding-left:0}
+.trust-item svg{color:var(--petrol-600);margin-bottom:.6rem}
+.trust-item strong{display:block;font-size:var(--fs-small);font-weight:600;color:var(--ink-900);margin-bottom:.2rem}
+.trust-item span{font-size:var(--fs-meta);color:var(--ink-500)}
+@media (max-width:900px){
+  .trust-grid{grid-template-columns:1fr 1fr;gap:var(--s-6)}
+  .trust-item{border-left:none;padding-left:0;border-top:1px solid var(--bone-200);padding-top:var(--s-4)}
+  .trust-item:nth-child(1),.trust-item:nth-child(2){border-top:none;padding-top:0}
+}
+
+/* ============================================================
+   CATEGORIES
+   ============================================================ */
+.category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--s-4)}
+.category-card{
+  background:#fff;border:1px solid var(--bone-200);border-radius:var(--r-md);padding:1.75rem;
+  text-align:left;transition:border-color var(--dur-std),box-shadow var(--dur-std),transform var(--dur-std) var(--ease-out);
+}
+.category-card:hover,.category-card:focus-visible{border-color:var(--petrol-600);box-shadow:var(--e-2);transform:translateY(-2px)}
+.cat-icon{width:48px;height:48px;border-radius:var(--r-sm);background:var(--petrol-100);color:var(--petrol-700);display:grid;place-items:center;margin-bottom:1rem}
+.category-card h3{margin-bottom:.2rem;font-size:var(--fs-h3)}
+.category-card .count{font-size:var(--fs-meta);color:var(--ink-500)}
+
+/* ============================================================
+   PRODUCT CARDS
+   ============================================================ */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.product-card{
+  background:#fff;border:1px solid var(--bone-200);border-radius:var(--r-md);overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:box-shadow var(--dur-std),transform var(--dur-std) var(--ease-out),border-color var(--dur-std);
+}
+.product-card:hover{box-shadow:var(--e-3);transform:translateY(-3px);border-color:var(--petrol-600)}
+.product-media{
+  position:relative;aspect-ratio:4/3;background:linear-gradient(150deg,var(--petrol-050),var(--petrol-100));
+  display:grid;place-items:center;
+}
+.product-media svg{width:40%;height:40%;color:var(--petrol-700)}
+.pill{
+  position:absolute;top:.75rem;left:.75rem;font-size:.6875rem;font-weight:600;letter-spacing:.03em;
+  padding:.3rem .65rem;border-radius:var(--r-full);
+}
+.pill-check{background:var(--amber-100);color:var(--amber-600)}
+.product-body{padding:1.1rem 1.25rem 1.25rem;display:flex;flex-direction:column;flex:1}
+.product-eyebrow{font-size:var(--fs-eyebrow);letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--petrol-600);margin-bottom:.35rem}
+.product-body h3{font-size:var(--fs-h3);margin-bottom:.35rem}
+.product-desc{font-size:var(--fs-small);color:var(--ink-500);margin-bottom:.9rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.product-price{font-family:var(--font-body);font-size:var(--fs-h3);font-weight:700;color:var(--ink-900);font-feature-settings:"tnum" 1;margin-bottom:.1rem}
+.product-price-note{font-size:var(--fs-meta);color:var(--ink-300);margin-bottom:1rem}
+.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:auto}
+
+/* ============================================================
+   CATALOGUE
+   ============================================================ */
+.catalogue-caption{font-size:var(--fs-meta);color:var(--ink-500);background:var(--bone-100);border-radius:var(--r-sm);padding:.75rem 1rem;margin-bottom:var(--s-6);display:inline-block}
+.toolbar{
+  background:#fff;border:1px solid var(--bone-200);border-radius:var(--r-md);box-shadow:var(--e-1);
+  padding:16px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:12px;margin-bottom:1rem;
+}
+@media (max-width:900px){.toolbar{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.toolbar{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:.4rem}
+.field label{font-size:var(--fs-meta);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-500);font-weight:600}
+.field input,.field select,.field textarea{
+  border:1.5px solid var(--bone-200);border-radius:var(--r-sm);padding:.65rem .8rem;background:#fff;color:var(--ink-900);
+  transition:border-color var(--dur-micro);
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--petrol-600);outline:none}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:560px){.field-row{grid-template-columns:1fr}}
+
+.result-bar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;font-size:var(--fs-meta);color:var(--ink-500);margin-bottom:1.5rem}
+.empty-state{
+  border:1.5px dashed var(--bone-200);border-radius:var(--r-md);padding:3rem 1.5rem;text-align:center;color:var(--ink-500);
+}
+.empty-state a{font-weight:600}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.service-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}
+.service-card{background:#fff;border:1px solid var(--bone-200);border-radius:var(--r-md);padding:1.75rem}
+.service-num{width:36px;height:36px;border-radius:var(--r-sm);background:var(--petrol-700);color:#fff;display:grid;place-items:center;font-weight:600;margin-bottom:1rem}
+.service-card h3{margin-bottom:.4rem}
+.service-card p{font-size:var(--fs-small);color:var(--ink-500);margin:0}
+
+/* ============================================================
+   HOW ORDERING WORKS
+   ============================================================ */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-8) var(--s-6)}
+@media (max-width:760px){.steps-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps-grid{grid-template-columns:1fr}}
+.step .step-num{font-family:var(--font-display);font-size:1.75rem;color:var(--amber-600);font-weight:600;margin-bottom:.3rem}
+.step h4{font-size:var(--fs-small);font-weight:600;color:var(--ink-900);margin-bottom:.2rem}
+.step p{font-size:var(--fs-small);color:var(--ink-500);margin:0}
+.steps-note{text-align:center;color:var(--ink-500);font-size:var(--fs-small);margin-top:var(--s-8);font-style:italic}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s-16)}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:var(--s-8)}}
+.notice-block{
+  background:var(--petrol-050);border-left:4px solid var(--petrol-600);border-radius:0 var(--r-sm) var(--r-sm) 0;
+  padding:1.15rem 1.4rem;font-size:var(--fs-small);
+}
+.notice-block p:last-child{margin-bottom:0}
+.values-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1.1rem}
+.values-list li{display:flex;gap:.85rem}
+.values-list .check{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--petrol-100);color:var(--petrol-700);display:grid;place-items:center;margin-top:.15rem}
+.values-list p{margin:0;font-size:var(--fs-small);color:var(--ink-500)}
+.values-list strong{color:var(--ink-900)}
+
+/* ============================================================
+   REQUEST FORM
+   ============================================================ */
+.request-wrap{max-width:760px;margin:0 auto}
+.request-form{background:#fff;border:1px solid var(--bone-200);border-radius:var(--r-md);padding:var(--s-8);box-shadow:var(--e-1)}
+.request-form .field-row{margin-bottom:1rem}
+.request-form .field{margin-bottom:1rem}
+.request-form textarea{resize:vertical;min-height:100px}
+.form-actions{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-top:1.5rem}
+.privacy-line{font-size:var(--fs-meta);color:var(--ink-500);margin-top:1rem;margin-bottom:0}
+.field.is-invalid input,.field.is-invalid textarea{border-color:#C0433D}
+.field-error{font-size:var(--fs-meta);color:#C0433D;display:none}
+.field.is-invalid .field-error{display:block}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq-list{display:flex;flex-direction:column;gap:.75rem;max-width:820px}
+.faq-item{background:#fff;border:1px solid var(--bone-200);border-radius:var(--r-md);overflow:hidden}
+.faq-item summary{
+  list-style:none;cursor:pointer;padding:1.1rem 1.35rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  font-weight:600;color:var(--ink-900);font-size:var(--fs-small);
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item .chevron{transition:transform var(--dur-std) var(--ease-out);flex-shrink:0;color:var(--petrol-600)}
+.faq-item[open] .chevron{transform:rotate(180deg)}
+.faq-item .faq-answer{padding:0 1.35rem 1.25rem;font-size:var(--fs-small);color:var(--ink-500)}
+.faq-item .faq-answer p{margin:0}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.contact-card{background:#fff;border:1px solid var(--bone-200);border-radius:var(--r-md);padding:1.5rem}
+.contact-icon{width:48px;height:48px;border-radius:var(--r-sm);background:var(--petrol-100);color:var(--petrol-700);display:grid;place-items:center;margin-bottom:1rem}
+.contact-card .label{font-size:var(--fs-meta);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-500);font-weight:600;margin-bottom:.3rem}
+.contact-card .value{font-size:var(--fs-small);font-weight:600;color:var(--petrol-700)}
+.social-row{display:flex;gap:.6rem;margin-top:var(--s-8)}
+.social-row a{width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid var(--bone-200);display:grid;place-items:center;color:var(--petrol-700)}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{background:var(--petrol-950);color:rgba(255,255,255,.72);padding-top:var(--s-16)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--s-12)}
+@media (max-width:760px){.footer-grid{grid-template-columns:1fr;gap:var(--s-8)}}
+.footer-brand{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
+.footer-brand strong{color:#fff;font-size:1rem}
+.site-footer h4{color:#fff;font-size:var(--fs-small);letter-spacing:.04em;margin-bottom:1rem}
+.site-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.site-footer a{color:rgba(255,255,255,.72)}
+.site-footer a:hover{color:#fff}
+.footer-desc{font-size:var(--fs-small);max-width:32ch;color:rgba(255,255,255,.6)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.14);margin-top:var(--s-12);padding-block:1.5rem;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;font-size:var(--fs-meta);color:rgba(255,255,255,.5);
+}
+
+/* ============================================================
+   FLOATING WHATSAPP BUTTON
+   ============================================================ */
+.float-whatsapp{
+  position:fixed;right:1.25rem;bottom:1.25rem;z-index:90;width:56px;height:56px;border-radius:var(--r-full);
+  background:var(--whatsapp);color:#fff;display:grid;place-items:center;
+  box-shadow:0 8px 26px rgba(31,168,85,.4);transition:transform var(--dur-std) var(--ease-out);
+}
+.float-whatsapp:hover{transform:scale(1.06)}
+@media (max-width:600px){.float-whatsapp{width:52px;height:52px;right:.85rem;bottom:.85rem}}
+
+/* ============================================================
+   MODAL
+   ============================================================ */
+.modal-backdrop{
+  position:fixed;inset:0;background:rgba(4,38,46,.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;padding:1.5rem;z-index:200;
+}
+.modal-backdrop.is-open{display:flex}
+.modal-panel{
+  background:#fff;border-radius:var(--r-md);max-width:840px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:var(--e-4);
+}
+.modal-hero{aspect-ratio:16/7;background:linear-gradient(150deg,var(--petrol-800),var(--petrol-600));display:grid;place-items:center;position:relative}
+.modal-hero svg{width:88px;height:88px;color:rgba(255,255,255,.85)}
+.modal-close{
+  position:absolute;top:1rem;right:1rem;width:38px;height:38px;border-radius:50%;
+  background:rgba(255,255,255,.15);color:#fff;display:grid;place-items:center;
+}
+.modal-close:hover{background:rgba(255,255,255,.28)}
+.modal-body{padding:2rem}
+.modal-eyebrow{font-size:var(--fs-eyebrow);letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--petrol-600);margin-bottom:.4rem}
+.modal-body h2{margin-bottom:.4rem}
+.modal-price{font-size:1.5rem;font-weight:700;color:var(--ink-900);font-feature-settings:"tnum" 1;margin-bottom:.1rem}
+.modal-price-note{font-size:var(--fs-meta);color:var(--ink-300);margin-bottom:1.5rem}
+.spec-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;font-size:var(--fs-small)}
+.spec-table th,.spec-table td{text-align:left;padding:.6rem 0;border-bottom:1px solid var(--bone-200)}
+.spec-table th{color:var(--ink-500);font-weight:500;width:40%}
+.spec-table td{color:var(--ink-900);font-weight:500}
+.modal-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+
+.hidden{display:none !important}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ============================================================
+     UTILITY BAR
+     ============================================================ -->
+<div class="utility">
+  <div class="container">
+    <span>Prices and availability are confirmed at the time of enquiry.</span>
+    <span><a href="tel:+251921326535">0921 326 535</a> &nbsp;·&nbsp; Addis Ababa, Ethiopia</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner" style="position:relative">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">YM</span>
+      <span class="brand-text">
+        <strong>Yonas Merga</strong>
+        <small>Medical Equipment</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#top" data-nav>Home</a></li>
+        <li><a href="#catalogue" data-nav>Products</a></li>
+        <li><a href="#categories" data-nav>Categories</a></li>
+        <li><a href="#services" data-nav>Services</a></li>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#faq" data-nav>Support</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-whatsapp btn-sm" id="headerWhatsApp" href="#" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.42 1.26 4.86L2 22l5.36-1.4a9.9 9.9 0 0 0 4.68 1.19h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.18.83.85-3.1-.2-.32a8.24 8.24 0 1 1 6.02 3.92zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn btn-ghost btn-sm" id="headerCall" href="tel:+251921326535">Call</a>
+      <button class="hamburger" id="hamburgerBtn" aria-expanded="false" aria-controls="mobilePanel" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-panel" id="mobilePanel">
+      <ul>
+        <li><a href="#top" data-nav-mobile>Home</a></li>
+        <li><a href="#catalogue" data-nav-mobile>Products</a></li>
+        <li><a href="#categories" data-nav-mobile>Categories</a></li>
+        <li><a href="#services" data-nav-mobile>Services</a></li>
+        <li><a href="#about" data-nav-mobile>About</a></li>
+        <li><a href="#faq" data-nav-mobile>Support</a></li>
+        <li><a href="#contact" data-nav-mobile>Contact</a></li>
+      </ul>
+      <div class="mobile-actions">
+        <a class="btn btn-whatsapp btn-block" id="mobileWhatsApp" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn-ghost btn-block" href="tel:+251921326535">Call us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-eyebrow">Addis Ababa, Ethiopia</span>
+      <h1>Medical equipment you can trust, supplied with clear information.</h1>
+      <p class="hero-lede">We supply mobility, rehabilitation and home-care equipment to families, caregivers and institutions across Ethiopia. Every listing is reviewed before publishing, and every price is confirmed with you personally before purchase.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-whatsapp" id="heroWhatsApp" href="#" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.42 1.26 4.86L2 22l5.36-1.4a9.9 9.9 0 0 0 4.68 1.19h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.18.83.85-3.1-.2-.32a8.24 8.24 0 1 1 6.02 3.92zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+          Ask on WhatsApp
+        </a>
+        <a class="btn btn-outline-light" href="#catalogue">Browse products</a>
+      </div>
+    </div>
+
+    <div class="hero-cards" role="list" aria-label="Why choose Yonas Merga Medical Equipment">
+      <div class="glass-card" role="listitem">
+        <span class="check" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <p><em>Verified listings.</em> Every product is reviewed before it is published.</p>
+      </div>
+      <div class="glass-card" role="listitem">
+        <span class="check" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <p><em>Direct contact.</em> Speak to a person — no middlemen.</p>
+      </div>
+      <div class="glass-card" role="listitem">
+        <span class="check" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <p><em>Honest information.</em> If a specification is unverified, we say so.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST STRIP
+     ============================================================ -->
+<section class="trust-strip" aria-label="Why customers trust us">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4Z"/></svg>
+      <strong>Based in Addis Ababa</strong>
+      <span>Local stock and local support</span>
+    </div>
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+      <strong>Phone &amp; WhatsApp support</strong>
+      <span>Speak to a person directly</span>
+    </div>
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <strong>Reviewed information</strong>
+      <span>Nothing published unchecked</span>
+    </div>
+    <div class="trust-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+      <strong>Guidance on choosing</strong>
+      <span>We help you find the right fit</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORIES
+     ============================================================ -->
+<section id="categories">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Product categories</span>
+      <h2>Find the right equipment</h2>
+      <p class="lede">Browse by category, or search the full catalogue below.</p>
+    </div>
+    <div class="category-grid" id="categoryGrid"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED PRODUCTS
+     ============================================================ -->
+<section class="bg-bone-100" id="featured">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Featured</span>
+      <h2>Popular equipment</h2>
+      <p class="lede">A selection of frequently requested items. Full range below.</p>
+    </div>
+    <div class="product-grid" id="featuredGrid"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FULL CATALOGUE
+     ============================================================ -->
+<section id="catalogue">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Full catalogue</span>
+      <h2>All products</h2>
+      <p class="lede">Search, filter and sort the complete range.</p>
+    </div>
+
+    <p class="catalogue-caption">Photography is being added across the range. Items without a photo yet are shown with a category icon — contact us for current images of any item.</p>
+
+    <div class="toolbar">
+      <div class="field">
+        <label for="searchInput">Search</label>
+        <input type="search" id="searchInput" placeholder="Search products…" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label for="categorySelect">Category</label>
+        <select id="categorySelect">
+          <option value="">All categories</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="priceSelect">Price</label>
+        <select id="priceSelect">
+          <option value="">Any price</option>
+          <option value="0-5000">Under 5,000 ETB</option>
+          <option value="5000-20000">5,000–20,000 ETB</option>
+          <option value="20000-100000">20,000–100,000 ETB</option>
+          <option value="100000-999999999">Over 100,000 ETB</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="sortSelect">Sort</label>
+        <select id="sortSelect">
+          <option value="default">Default</option>
+          <option value="price-asc">Price low → high</option>
+          <option value="price-desc">Price high → low</option>
+          <option value="name-asc">Name A–Z</option>
+          <option value="category">Category</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="result-bar">
+      <span id="resultCount" aria-live="polite">17 products shown</span>
+      <span id="priceNotice">Prices shown are indicative — please confirm before purchase.</span>
+    </div>
+
+    <div class="product-grid" id="catalogueGrid"></div>
+    <div class="empty-state hidden" id="emptyState">
+      <p>No products match your search. Try a different keyword, or <a href="#request">request the equipment you need</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="bg-bone-100" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">What we do</span>
+      <h2>Services</h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <span class="service-num" aria-hidden="true">1</span>
+        <h3>Equipment supply</h3>
+        <p>Mobility, rehabilitation and home-care equipment sourced and supplied to individuals, families and institutions.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num" aria-hidden="true">2</span>
+        <h3>Product guidance</h3>
+        <p>Not sure what you need? We talk through your situation and help you choose the right equipment.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num" aria-hidden="true">3</span>
+        <h3>Equipment requests</h3>
+        <p>Looking for something not listed? Send us a request and we will let you know if we can source it.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num" aria-hidden="true">4</span>
+        <h3>After-sales support</h3>
+        <p>Questions after your purchase are welcome — reach us by phone or WhatsApp any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW ORDERING WORKS
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Process</span>
+      <h2>How ordering works</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step"><span class="step-num">01</span><h4>Browse or search</h4><p>Find the equipment you need in the catalogue above.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Contact us</h4><p>Message us on WhatsApp or call to ask about the item.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>We confirm details</h4><p>We check current stock, price and any specification you asked about.</p></div>
+      <div class="step"><span class="step-num">04</span><h4>Agree the order</h4><p>Once details are confirmed, we agree quantity, delivery and payment together.</p></div>
+      <div class="step"><span class="step-num">05</span><h4>Delivery or pickup</h4><p>We arrange delivery or in-person collection, as suits you.</p></div>
+      <div class="step"><span class="step-num">06</span><h4>After-sales</h4><p>Reach out any time after your purchase with questions.</p></div>
+    </div>
+    <p class="steps-note">No payment is taken on this website. Everything is confirmed with you personally.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="bg-bone-100" id="about">
+  <div class="container about-grid">
+    <div>
+      <span class="eyebrow">About us</span>
+      <h2>A direct source for medical equipment in Addis Ababa</h2>
+      <p>Yonas Merga Medical Equipment supplies mobility, rehabilitation and home-care equipment to individuals, families, caregivers and institutions across Ethiopia. We have built our business through online marketplaces, and this website exists to give customers a direct relationship with us — clear information, a real person to talk to, and no guesswork.</p>
+      <p>We do not publish specifications, certifications or claims we have not verified. Where a detail is not yet confirmed, we say so plainly rather than guess. This is a deliberate choice: we would rather be honest about what we don't yet know than present something as fact when it isn't.</p>
+      <p>If you are choosing equipment for yourself or someone you care for, we are glad to talk it through with you — by phone or WhatsApp — before you decide.</p>
+      <div class="notice-block">
+        <p><strong>Please note.</strong> We are equipment suppliers, not medical professionals. Nothing on this site is medical advice. We recommend consulting a qualified healthcare professional about your specific condition or needs.</p>
+      </div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:1.25rem">What we stand for</h3>
+      <ul class="values-list">
+        <li>
+          <span class="check" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p><strong>Accuracy.</strong> We publish what we know to be true, and label what we don't.</p>
+        </li>
+        <li>
+          <span class="check" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p><strong>Transparency.</strong> Prices, availability and specifications are confirmed openly, not hidden.</p>
+        </li>
+        <li>
+          <span class="check" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p><strong>Respect.</strong> Plain language, no pressure, no exaggerated claims.</p>
+        </li>
+        <li>
+          <span class="check" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p><strong>Reliability.</strong> Someone is reachable to answer your questions, before and after purchase.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REQUEST EQUIPMENT
+     ============================================================ -->
+<section id="request">
+  <div class="container request-wrap">
+    <div class="section-header" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow">Can't find what you need?</span>
+      <h2>Request equipment</h2>
+      <p class="lede" style="margin-inline:auto">Tell us what you're looking for and we'll let you know if we can source it.</p>
+    </div>
+
+    <form class="request-form" id="requestForm" novalidate>
+      <div class="field-row">
+        <div class="field" id="nameField">
+          <label for="reqName">Your name</label>
+          <input type="text" id="reqName" name="name" autocomplete="name" />
+          <span class="field-error">Please enter your name.</span>
+        </div>
+        <div class="field" id="phoneField">
+          <label for="reqPhone">Your phone number</label>
+          <input type="tel" id="reqPhone" name="phone" autocomplete="tel" />
+          <span class="field-error">Please enter a phone number.</span>
+        </div>
+      </div>
+      <div class="field" id="productField">
+        <label for="reqProduct">Product you need</label>
+        <input type="text" id="reqProduct" name="product" />
+        <span class="field-error">Please tell us what you need.</span>
+      </div>
+      <div class="field">
+        <label for="reqDetails">Additional details (optional)</label>
+        <textarea id="reqDetails" name="details"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.42 1.26 4.86L2 22l5.36-1.4a9.9 9.9 0 0 0 4.68 1.19h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm4.52 14.04c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+          Send via WhatsApp
+        </button>
+        <a class="btn btn-ghost" href="tel:+251921326535">Or call us</a>
+      </div>
+      <p class="privacy-line">By sending this enquiry you agree that we may contact you about your request. We only collect the information needed to respond.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="bg-bone-100" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Support</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Are prices on the website final?
+          <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-answer"><p>No. Prices shown are indicative and are confirmed with you at the time of enquiry, before any purchase is agreed.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you deliver?
+          <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-answer"><p>Delivery and pickup options are discussed and confirmed once your order is agreed. Contact us for details.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I know if an item is in stock?
+          <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-answer"><p>Contact us by phone or WhatsApp and we will check current availability for you.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you source equipment not listed?
+          <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-answer"><p>Often, yes. Use the request equipment form and we will let you know if we can source it.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer warranties?
+          <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-answer"><p>Warranty terms vary by item. Contact us for details on the specific product you're interested in.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide medical advice?
+          <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-answer"><p>No. We supply equipment but are not medical professionals. We recommend consulting a qualified healthcare professional for guidance on your condition or needs.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="contact-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg></span>
+        <div class="label">Phone</div>
+        <a class="value" href="tel:+251921326535">0921 326 535</a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.42 1.26 4.86L2 22l5.36-1.4a9.9 9.9 0 0 0 4.68 1.19h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Z"/></svg></span>
+        <div class="label">WhatsApp</div>
+        <a class="value" id="contactWhatsApp" href="#" target="_blank" rel="noopener">Message us</a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4Z"/></svg></span>
+        <div class="label">Location</div>
+        <span class="value" style="color:var(--ink-900)">Addis Ababa, Ethiopia</span>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+        <div class="label">Response time</div>
+        <span class="value" style="color:var(--ink-900)">Usually within the day</span>
+      </div>
+    </div>
+    <div class="social-row" id="socialRow"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">YM</span>
+        <strong>Yonas Merga Medical Equipment</strong>
+      </div>
+      <p class="footer-desc">Medical, mobility, rehabilitation and home-care equipment, supplied with clear information.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#catalogue">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">Customer service</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+251921326535">0921 326 535</a></li>
+        <li><a id="footerWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#request">Request equipment</a></li>
+        <li>Addis Ababa, Ethiopia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="yearNow"></span> Yonas Merga Medical Equipment</span>
+    <span>Prices and availability are confirmed at the time of enquiry.</span>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING WHATSAPP BUTTON
+     ============================================================ -->
+<a class="float-whatsapp" id="floatWhatsApp" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.42 1.26 4.86L2 22l5.36-1.4a9.9 9.9 0 0 0 4.68 1.19h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm4.52 14.04c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<!-- ============================================================
+     PRODUCT DETAIL MODAL
+     ============================================================ -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modalPanel">
+    <div class="modal-hero" id="modalHero">
+      <button class="modal-close" id="modalClose" aria-label="Close product details">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <!-- [FUTURE] For products without a photo yet, this stays an icon panel until photographed -->
+      <div id="modalMedia" style="width:100%;height:100%;display:grid;place-items:center"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-eyebrow" id="modalEyebrow"></div>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-price" id="modalPrice"></div>
+      <div class="modal-price-note">Confirm price and availability before purchase.</div>
+      <p id="modalDesc"></p>
+      <table class="spec-table" id="modalSpecTable"></table>
+      <div class="notice-block">
+        <p>Fields marked "Contact us for details" are confirmed with you directly before purchase — we do not publish specifications we haven't verified.</p>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-whatsapp" id="modalWhatsApp" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+251921326535">Call us</a>
+        <a class="btn btn-ghost" href="#request" id="modalRequest">Request equipment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   CONFIG
+   ============================================================ */
+const CONFIG = {
+  businessName: "Yonas Merga Medical Equipment",
+  tagline: "Trusted Medical Equipment Professional",
+  location: "Addis Ababa, Ethiopia",
+  phoneDisplay: "0921 326 535",
+  phoneTel: "+251921326535",
+  whatsappNumber: "251921326535",
+  currency: "ETB",
+  priceVerified: "", // [FUTURE] set e.g. "September 2026" once prices are formally re-verified
+  social: {
+    facebook: "", // [FUTURE] add URL to show
+    instagram: "", // [FUTURE] add URL to show
+    tiktok: ""     // [FUTURE] add URL to show
+  }
+};
+
+/* ============================================================
+   PRODUCT DATA
+   Only catalogue items with a confirmed product photo are listed.
+   ============================================================ */
+const PRODUCTS = [
+  { id:"YM-001", name:"Quad Cane", category:"Walking Sticks", price:3500, featured:false,
+    photo:"quad-cane.jpg",
+    specs:{ "Base":"4 rubber feet (quad base)", "Load capacity":"150 kg", "Materials":"Stainless steel", "Features":"Height-adjustable" } },
+  { id:"YM-004", name:"Blood Pressure Monitor", category:"Blood Pressure Monitors", price:5999, featured:true,
+    photo:"bp-monitor.jpg",
+    specs:{ "Brand":"Yuwell (YE660D)", "Monitor type":"Digital, arm cuff", "Monitor features":"Automatic pressurization, automatic shutdown, overpressure protection" } },
+  { id:"YM-008", name:"Toilet / Commode Chair", category:"Bathroom & Commode", price:15999, featured:true,
+    photo:"commode-chair.jpg",
+    specs:{ "Features":"Adjustable height, foldable, multi-purpose shower/bathroom use" } },
+  { id:"YM-009", name:"Walking Stick / Cane", category:"Walking Sticks", price:3500, featured:false,
+    photo:"walking-sticks.jpg" },
+  { id:"YM-013", name:"4-Frame Aluminum Walker", category:"Walkers", price:7999, featured:false,
+    photo:"four-frame-walker.jpg",
+    specs:{ "Frame":"Aluminum, 4-legged, foldable", "Load capacity":"150 kg", "Features":"With wheels and without-wheel option, corrosion-resistant, packed and portable" } },
+  { id:"YM-014", name:"Wheelchair (Red)", category:"Wheelchairs", price:17999, featured:true,
+    photo:"wheelchair-red.jpg" },
+  { id:"YM-015", name:"Crutches Walking Aid", category:"Crutches", price:4500, featured:false,
+    photo:"crutches-walking-aid.jpg",
+    specs:{ "Crutches type":"Axillary crutches", "Load capacity":"150 kg", "Materials":"Aluminum, stainless steel", "Features":"Lightweight, height-adjustable" } },
+  { id:"YM-017", name:"Electric Wheelchair", category:"Electric Wheelchairs", price:250000, featured:true,
+    photo:"electric-wheelchair.jpg" },
+  { id:"YM-018", name:"Foldable Manual Wheelchair", category:"Wheelchairs", price:14999, featured:true,
+    photo:"wheelchair-manual.jpg" },
+  { id:"YM-019", name:"Hospital Bed", category:"Hospital Beds", price:85000, featured:true,
+    photo:"hospital-bed.jpg",
+    specs:{ "Model":"YKC003", "Features":"Double crank system for separate manual adjustment of the backrest and leg section", "Frame":"Heavy-duty steel frame" } },
+  { id:"YM-020", name:"Axillary Crutches (Set of 2) – Underarm Pads", category:"Crutches", price:4499, featured:false,
+    photo:"axillary-crutches-set.jpg",
+    specs:{ "Brand":"Other", "Crutches type":"Axillary / underarm crutches", "Maximum user weight":"130 kg", "Load capacity":"150 kg", "Materials":"Aluminum, stainless steel, corrosion-resistant", "Features":"2-piece set, height-adjustable" } }
+];
+
+// All categories with icons ready; only categories with products render on the site.
+const CATEGORY_ICONS = {
+  "Wheelchairs": '<circle cx="16" cy="34" r="8"/><path d="M16 26V12h10"/><path d="M16 20h14l6 14"/><circle cx="38" cy="38" r="4"/>',
+  "Electric Wheelchairs": '<circle cx="14" cy="34" r="7"/><path d="M14 27V14h9"/><path d="M14 21h12l5 13"/><path d="M32 12l-4 8h6l-4 8"/>',
+  "Walkers": '<path d="M10 42V18a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v24"/><path d="M14 30h20"/><path d="M10 42v4M38 42v4"/>',
+  "Crutches": '<path d="M16 6v36M32 6v36"/><path d="M10 12h12M26 12h12"/><path d="M16 24h-4M32 24h4"/>',
+  "Walking Sticks": '<path d="M24 6c-5 0-8 3-8 7s3 6 8 6" /><path d="M24 19v23"/><path d="M18 42h12"/>',
+  "Bathroom & Commode": '<rect x="12" y="10" width="24" height="6" rx="2"/><circle cx="24" cy="13" r="0"/><path d="M14 16v14a10 10 0 0 0 20 0V16"/><path d="M10 30h6M32 30h6"/>',
+  "Blood Pressure Monitors": '<rect x="14" y="8" width="20" height="14" rx="2"/><path d="M18 22v6a6 6 0 0 0 12 0v-6"/><circle cx="24" cy="15" r="3"/>',
+  "Hospital Beds": '<path d="M6 30V12M6 30h36V22a4 4 0 0 0-4-4H18l-6 6H6"/><path d="M6 30v8M42 30v8"/><circle cx="16" cy="17" r="3"/>',
+  "Rehabilitation Equipment": '<path d="M24 8v10M24 30v10M8 24h10M30 24h10"/><circle cx="24" cy="24" r="6"/>',
+  "Home-Care Equipment": '<path d="M10 24 24 10l14 14"/><path d="M14 22v16h20V22"/>'
+};
+
+/* ============================================================
+   HELPERS
+   ============================================================ */
+const fmtPrice = n => n.toLocaleString("en-US") + " " + CONFIG.currency;
+const waLink = msg => "https://wa.me/" + CONFIG.whatsappNumber + "?text=" + encodeURIComponent(msg);
+const categoryIconSVG = (cat, size) => {
+  const paths = CATEGORY_ICONS[cat] || CATEGORY_ICONS["Home-Care Equipment"];
+  return '<svg viewBox="0 0 48 48" width="'+size+'" height="'+size+'" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths+'</svg>';
+};
+
+function setWhatsAppLinks(){
+  const defaultMsg = "Hi, I'd like to ask about your medical equipment.";
+  document.querySelectorAll('#headerWhatsApp,#mobileWhatsApp,#heroWhatsApp,#contactWhatsApp,#floatWhatsApp,#footerWhatsApp')
+    .forEach(el => el.href = waLink(defaultMsg));
+}
+
+function renderPriceNotice(){
+  const el = document.getElementById('priceNotice');
+  el.textContent = CONFIG.priceVerified
+    ? "Prices confirmed as of " + CONFIG.priceVerified + "."
+    : "Prices shown are indicative — please confirm before purchase.";
+}
+
+function renderSocial(){
+  const row = document.getElementById('socialRow');
+  const links = [];
+  if (CONFIG.social.facebook) links.push({name:"Facebook", url:CONFIG.social.facebook, path:'<path d="M14 22v-6h4v-3c0-4 2-6 6-6h4v6h-3c-1 0-2 .5-2 2v1h5l-1 6h-4v14h-6V22Z"/>'});
+  if (CONFIG.social.instagram) links.push({name:"Instagram", url:CONFIG.social.instagram, path:'<rect x="10" y="10" width="20" height="20" rx="6"/><circle cx="20" cy="20" r="5"/><circle cx="27" cy="13" r="1"/>'});
+  if (CONFIG.social.tiktok) links.push({name:"TikTok", url:CONFIG.social.tiktok, path:'<path d="M24 8v18a5 5 0 1 1-4-4.9"/><path d="M24 8c1 3 3 5 6 5.5"/>'});
+  if (!links.length){ row.classList.add('hidden'); return; }
+  row.innerHTML = links.map(l =>
+    '<a href="'+l.url+'" target="_blank" rel="noopener" aria-label="'+l.name+'"><svg width="18" height="18" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+l.path+'</svg></a>'
+  ).join('');
+}
+
+/* ============================================================
+   CATEGORIES
+   ============================================================ */
+function renderCategories(){
+  const counts = {};
+  PRODUCTS.forEach(p => counts[p.category] = (counts[p.category]||0)+1);
+  const cats = Object.keys(counts);
+  const grid = document.getElementById('categoryGrid');
+  grid.innerHTML = cats.map(cat => `
+    <button class="category-card" type="button" data-filter-category="${cat}">
+      <span class="cat-icon">${categoryIconSVG(cat,26)}</span>
+      <h3>${cat}</h3>
+      <span class="count">${counts[cat]} product${counts[cat]===1?'':'s'}</span>
+    </button>
+  `).join('');
+
+  const select = document.getElementById('categorySelect');
+  cats.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat; opt.textContent = cat;
+    select.appendChild(opt);
+  });
+
+  grid.addEventListener('click', e => {
+    const btn = e.target.closest('[data-filter-category]');
+    if (!btn) return;
+    document.getElementById('categorySelect').value = btn.dataset.filterCategory;
+    applyFilters();
+    document.getElementById('catalogue').scrollIntoView({behavior: prefersReducedMotion() ? 'auto' : 'smooth'});
+  });
+}
+
+function prefersReducedMotion(){
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+/* ============================================================
+   PRODUCT CARD MARKUP
+   ============================================================ */
+function productCard(p){
+  const desc = p.specs
+    ? Object.values(p.specs)[0]
+    : "Confirm current specification and availability with our team before purchase.";
+  // [FUTURE] For products without a photo yet, replace the icon panel below with
+  // <img data-photo-pending src="..." alt="${p.name}"> once photographed.
+  const media = p.photo
+    ? `<img src="${p.photo}" alt="${p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover">`
+    : categoryIconSVG(p.category,'100%');
+  return `
+    <article class="product-card">
+      <div class="product-media">
+        <span class="pill pill-check">Check availability</span>
+        ${media}
+      </div>
+      <div class="product-body">
+        <span class="product-eyebrow">${p.category}</span>
+        <h3>${p.name}</h3>
+        <p class="product-desc">${desc}</p>
+        <div class="product-price">${fmtPrice(p.price)}</div>
+        <div class="product-price-note">Confirm price before purchase</div>
+        <div class="product-actions">
+          <button class="btn btn-ghost btn-sm" data-view-product="${p.id}">View details</button>
+          <a class="btn btn-whatsapp btn-sm" href="${waLink("Hi, I'm interested in "+p.name+" (ID: "+p.id+"). Please confirm availability and price.")}" target="_blank" rel="noopener">Ask</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderFeatured(){
+  const grid = document.getElementById('featuredGrid');
+  grid.innerHTML = PRODUCTS.filter(p => p.featured).map(productCard).join('');
+}
+
+/* ============================================================
+   CATALOGUE — FILTER / SORT / SEARCH
+   ============================================================ */
+let catalogueFiltered = [...PRODUCTS];
+
+function applyFilters(){
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const cat = document.getElementById('categorySelect').value;
+  const priceRange = document.getElementById('priceSelect').value;
+  const sort = document.getElementById('sortSelect').value;
+
+  let list = PRODUCTS.filter(p => {
+    const matchesQuery = !q || p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q);
+    const matchesCat = !cat || p.category === cat;
+    let matchesPrice = true;
+    if (priceRange){
+      const [min,max] = priceRange.split('-').map(Number);
+      matchesPrice = p.price >= min && p.price <= max;
+    }
+    return matchesQuery && matchesCat && matchesPrice;
+  });
+
+  switch(sort){
+    case 'price-asc': list.sort((a,b)=>a.price-b.price); break;
+    case 'price-desc': list.sort((a,b)=>b.price-a.price); break;
+    case 'name-asc': list.sort((a,b)=>a.name.localeCompare(b.name)); break;
+    case 'category': list.sort((a,b)=>a.category.localeCompare(b.category)); break;
+  }
+
+  catalogueFiltered = list;
+  renderCatalogue();
+}
+
+function renderCatalogue(){
+  const grid = document.getElementById('catalogueGrid');
+  const empty = document.getElementById('emptyState');
+  const count = document.getElementById('resultCount');
+
+  if (!catalogueFiltered.length){
+    grid.innerHTML = '';
+    empty.classList.remove('hidden');
+  } else {
+    empty.classList.add('hidden');
+    grid.innerHTML = catalogueFiltered.map(productCard).join('');
+  }
+  count.textContent = catalogueFiltered.length + ' product' + (catalogueFiltered.length===1?'':'s') + ' shown';
+}
+
+['searchInput','categorySelect','priceSelect','sortSelect'].forEach(id => {
+  document.getElementById(id).addEventListener('input', applyFilters);
+  document.getElementById(id).addEventListener('change', applyFilters);
+});
+
+/* ============================================================
+   PRODUCT MODAL
+   ============================================================ */
+let lastFocusedEl = null;
+const modalBackdrop = document.getElementById('modalBackdrop');
+const modalPanel = document.getElementById('modalPanel');
+
+function openModal(productId){
+  const p = PRODUCTS.find(x => x.id === productId);
+  if (!p) return;
+  lastFocusedEl = document.activeElement;
+
+  document.getElementById('modalEyebrow').textContent = p.category + '  ·  ' + p.id;
+  document.getElementById('modalTitle').textContent = p.name;
+  document.getElementById('modalPrice').textContent = fmtPrice(p.price);
+  document.getElementById('modalDesc').textContent = 'Contact us for the full specification of this item. We confirm every detail with you before purchase so nothing is assumed.';
+  document.getElementById('modalWhatsApp').href = waLink("Hi, I'm interested in "+p.name+" (ID: "+p.id+"). Please confirm availability and price.");
+
+  const mediaEl = document.getElementById('modalMedia');
+  mediaEl.innerHTML = p.photo
+    ? `<img src="${p.photo}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">`
+    : `<svg viewBox="0 0 48 48" width="88" height="88" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:.85">${CATEGORY_ICONS[p.category] || CATEGORY_ICONS["Home-Care Equipment"]}</svg>`;
+
+  const specs = [
+    ['Product code', p.id],
+    ['Category', p.category],
+    ['Indicative price', fmtPrice(p.price)],
+    ['Availability', 'Contact us for details'],
+    ['Dimensions', 'Contact us for details'],
+    ['Weight capacity', 'Contact us for details'],
+    ['Materials', 'Contact us for details'],
+    ['Warranty', 'Contact us for details']
+  ];
+  if (p.specs){
+    Object.entries(p.specs).forEach(([k,v]) => {
+      const idx = specs.findIndex(row => row[0].toLowerCase() === k.toLowerCase());
+      if (idx > -1) specs[idx][1] = v; else specs.splice(3, 0, [k, v]);
+    });
+  }
+  document.getElementById('modalSpecTable').innerHTML = specs.map(([k,v]) =>
+    `<tr><th scope="row">${k}</th><td>${v}</td></tr>`
+  ).join('');
+
+  modalBackdrop.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+  modalPanel.setAttribute('tabindex','-1');
+  modalPanel.focus();
+  document.addEventListener('keydown', modalKeydown);
+}
+
+function closeModal(){
+  modalBackdrop.classList.remove('is-open');
+  document.body.style.overflow = '';
+  document.removeEventListener('keydown', modalKeydown);
+  if (lastFocusedEl) lastFocusedEl.focus();
+}
+
+function modalKeydown(e){
+  if (e.key === 'Escape'){ closeModal(); return; }
+  if (e.key === 'Tab'){
+    const focusables = modalPanel.querySelectorAll('a[href], button:not([disabled])');
+    if (!focusables.length) return;
+    const first = focusables[0], last = focusables[focusables.length-1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+}
+
+document.addEventListener('click', e => {
+  const trigger = e.target.closest('[data-view-product]');
+  if (trigger){ openModal(trigger.dataset.viewProduct); }
+});
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modalBackdrop.addEventListener('click', e => { if (e.target === modalBackdrop) closeModal(); });
+document.getElementById('modalRequest').addEventListener('click', closeModal);
+
+/* ============================================================
+   HEADER SCROLL STATE
+   ============================================================ */
+const header = document.getElementById('siteHeader');
+function onScroll(){
+  header.classList.toggle('is-solid', window.scrollY > 80);
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+/* ============================================================
+   MOBILE NAV
+   ============================================================ */
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobilePanel = document.getElementById('mobilePanel');
+hamburgerBtn.addEventListener('click', () => {
+  const open = mobilePanel.classList.toggle('is-open');
+  hamburgerBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  hamburgerBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+mobilePanel.querySelectorAll('[data-nav-mobile]').forEach(a => {
+  a.addEventListener('click', () => {
+    mobilePanel.classList.remove('is-open');
+    hamburgerBtn.setAttribute('aria-expanded','false');
+    hamburgerBtn.setAttribute('aria-label','Open menu');
+  });
+});
+
+/* ============================================================
+   ACTIVE NAV HIGHLIGHT
+   ============================================================ */
+(function initNavHighlight(){
+  const navLinks = Array.from(document.querySelectorAll('[data-nav]'));
+  const sections = navLinks.map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  if (!sections.length || !('IntersectionObserver' in window)) return;
+
+  const setActive = id => {
+    navLinks.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#'+id));
+  };
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(en => en.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
+    if (visible.length) setActive(visible[0].target.id);
+  }, { rootMargin:'-40% 0px -50% 0px', threshold:0 });
+  sections.forEach(s => observer.observe(s));
+})();
+
+/* ============================================================
+   REQUEST FORM
+   ============================================================ */
+document.getElementById('requestForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('reqName').value.trim();
+  const phone = document.getElementById('reqPhone').value.trim();
+  const product = document.getElementById('reqProduct').value.trim();
+  const details = document.getElementById('reqDetails').value.trim();
+
+  let valid = true;
+  const setInvalid = (fieldId, isInvalid) => {
+    document.getElementById(fieldId).classList.toggle('is-invalid', isInvalid);
+    if (isInvalid) valid = false;
+  };
+  setInvalid('nameField', !name);
+  setInvalid('phoneField', !phone);
+  setInvalid('productField', !product);
+  if (!valid) return;
+
+  let msg = "Equipment request\nName: "+name+"\nPhone: "+phone+"\nProduct needed: "+product;
+  if (details) msg += "\nDetails: "+details;
+
+  window.open(waLink(msg), '_blank', 'noopener');
+});
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+(function initScrollReveal(){
+  if (prefersReducedMotion() || !('IntersectionObserver' in window)) return;
+  const targets = document.querySelectorAll('.category-card,.product-card,.service-card,.contact-card,.step,.faq-item');
+  targets.forEach((el,i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity '+560+'ms var(--ease-out), transform 560ms var(--ease-out)';
+  });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, idx) => {
+      if (entry.isIntersecting){
+        setTimeout(() => {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }, idx * 40);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  targets.forEach(el => observer.observe(el));
+})();
+
+/* ============================================================
+   INIT
+   ============================================================ */
+document.getElementById('yearNow').textContent = new Date().getFullYear();
+setWhatsAppLinks();
+renderPriceNotice();
+renderSocial();
+renderCategories();
+renderFeatured();
+applyFilters();
+</script>
+</body>
+</html>
